@@ -3,7 +3,7 @@ const Contact = require('../model/contact');
 const router = express.Router()
 
 // Get all posts
-router.get("/contact", async (req, res) => {
+router.get("/Contact", async (req, res) => {
 	const posts = await Contact.find()
 
 	console.log(posts)
@@ -11,7 +11,7 @@ router.get("/contact", async (req, res) => {
 })
 
 // Create and store contact message
-router.post("/contact", async (req, res) => {
+router.post("/Contact", async (req, res) => {
 	const post = new Contact({
 		email: req.query.email,
 		firstname: req.query.firstname,
