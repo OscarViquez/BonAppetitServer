@@ -11,6 +11,7 @@ router.get("/readContacts", async (req, res) => {
 })
 
 // Create and store contact message
+// Send Contact Info
 router.post("/sendContact", async (req, res) => {
 	const post = new Contact({
 		email: req.query.email,
